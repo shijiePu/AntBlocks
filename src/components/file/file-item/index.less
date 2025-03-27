@@ -1,0 +1,41 @@
+@import '../../../theme/default.less';
+
+@file-prefix-cls: ~'@{prefix}-file-item';
+
+.@{file-prefix-cls} {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-right: 5px;
+
+  &-left {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      margin-right: 10px;
+    }
+
+    &-fileName {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    &-canClick:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-action {
+    display: none;
+  }
+}
+
+.@{file-prefix-cls}:hover {
+  .@{file-prefix-cls}-action {
+    margin-left: 8px;
+    display: inline-block;
+  }
+}

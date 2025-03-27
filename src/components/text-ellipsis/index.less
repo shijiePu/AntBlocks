@@ -1,0 +1,35 @@
+@import '../../theme/default.less';
+
+@ellipsis-prefix-cls: ~'@{prefix}-ellipsis';
+
+.@{ellipsis-prefix-cls}-multi {
+  // 让纯数字也可以换行显示
+  word-break: break-all;
+  //整体超出部分隐藏
+  overflow: hidden;
+  //文本超出部分以...形式展示，同第一行样式代码
+  text-overflow: ellipsis;
+  //display 块级元素展示
+  display: -webkit-box;
+  //设置文本行数为2行
+  //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+  -webkit-box-orient: vertical;
+
+  &-tooltip {
+    position: absolute;
+    opacity: 0;
+  }
+}
+
+.@{ellipsis-prefix-cls}-single {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  position: relative;
+
+  &-tooltip {
+    position: absolute;
+    opacity: 0;
+  }
+}

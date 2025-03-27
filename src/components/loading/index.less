@@ -1,0 +1,29 @@
+@import '../../theme/default.less';
+
+@loading-prefix-cls: ~'@{prefix}-loading';
+
+.@{loading-prefix-cls} {
+  padding-right: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-img {
+    margin: 0 auto;
+  }
+
+  &-large {
+    font-size: 120px;
+  }
+
+  &-middle {
+    font-size: 80px;
+  }
+
+  &-small {
+    font-size: 40px;
+  }
+}

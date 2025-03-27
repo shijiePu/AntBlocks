@@ -1,0 +1,67 @@
+.legal-register-new-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 24px;
+
+  .title {
+    font-size: 18px;
+    font-family: PingFang SC, PingFang SC-Semibold;
+    font-weight: 600;
+    text-align: center;
+    color: #4759c5;
+    line-height: 25px;
+  }
+
+  .center {
+    width: 800px;
+
+    position: relative;
+
+    .tip {
+      position: absolute;
+      top: 0;
+      right: -233px;
+    }
+  }
+
+  // :global {
+    .ant-tabs {
+      .ant-tabs-nav-list {
+        width: 99%;
+
+        .ant-tabs-tab:nth-child(1) {
+          border-radius: 8px 0px 0px 8px;
+        }
+
+        .ant-tabs-tab:nth-child(2) {
+          border-radius: 0px 8px 8px 0px;
+        }
+
+
+        .ant-tabs-tab {
+          margin-left: 0 !important;
+          border: 1px solid #4759c5;
+          flex: 1;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          border-radius: 8px;
+
+          .ant-tabs-tab-btn {
+            color: #4759C5;
+          }
+        }
+
+        .ant-tabs-tab-active {
+          background: #4759C5;
+
+          .ant-tabs-tab-btn {
+            color: #fff;
+          }
+        }
+      }
+
+    }
+  // }
+}

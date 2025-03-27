@@ -1,0 +1,28 @@
+@import '../../theme/default.less';
+
+@file-prefix-cls: ~'@{prefix}-file';
+
+.@{file-prefix-cls} {
+  &-label {
+    color: rgba(8, 16, 30, 55%);
+    padding-right: 11px;
+  }
+
+  &-list {
+    &-sole {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.@{file-prefix-cls}-list-line {
+  display: flex;
+  flex-wrap: wrap;
+
+  .@{file-prefix-cls}-list-item {
+    display: inline-block;
+    margin-right: 24px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+}
